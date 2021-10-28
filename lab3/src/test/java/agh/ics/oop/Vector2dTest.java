@@ -20,7 +20,7 @@ public class Vector2dTest{
     }
     @Test
     public void followsTest(){
-        assertTrue((new Vector2d(56,43)).follows(new Vector2d(10,10)));
+        assertTrue((new Vector2d(56,43)).follows(new Vector2d(10,10)));;
     }
     @Test
     public void upperRightTest(){
