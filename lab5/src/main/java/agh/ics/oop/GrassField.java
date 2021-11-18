@@ -13,11 +13,11 @@ public class GrassField extends AbstractWorldMap{
         for(int i=0; i<n; i++){
             Vector2d check = new Vector2d(this.getRandomNumber(0, this.width), this.getRandomNumber(0, this.height));
             int flag = 0;
-            while(flag!=n){
+            while(flag!=grasses.size()){
                 flag = 0;
                 check = new Vector2d(this.getRandomNumber(0, this.width), this.getRandomNumber(0, this.height));
-                for(int j=0; j<n; j++){
-                    if(!check.equals(grasses.get(i).getPosition())){
+                for(int j=0; j<grasses.size(); j++){
+                    if(!check.equals(grasses.get(j).getPosition())){
                         flag++;
                     }
                 }

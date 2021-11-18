@@ -7,7 +7,7 @@ public class SimulationEngine implements IEngine{
         this.directions = directions;
         this.map = map;
         for(int i=0; i<locations.length; i++){
-            Animal baby = new Animal(map, locations[i]);
+            Animal baby = new Animal(locations[i]);
             map.place(baby); // if jakis?
         }
     }
