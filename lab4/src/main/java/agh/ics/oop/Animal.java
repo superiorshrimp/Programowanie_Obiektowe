@@ -4,10 +4,6 @@ public class Animal{
     private MapDirection facing;
     private Vector2d position;
     public IWorldMap map;
-    public Animal(){
-        this.facing = MapDirection.NORTH;
-        this.position = new Vector2d(2,2);
-    }
     public Animal(IWorldMap map){
         this.facing = MapDirection.NORTH;
         this.position = new Vector2d(2,2);
@@ -22,7 +18,7 @@ public class Animal{
     public Vector2d getPosition(){return this.position;}
     public boolean isAt(Vector2d loc){return this.position.equals(loc);}
     public String toString(){
-        return this.facing.toString();//+ this.position.toString();
+        return this.facing.toString();
     }
     public void move(MoveDirection direction){
         switch (direction) {

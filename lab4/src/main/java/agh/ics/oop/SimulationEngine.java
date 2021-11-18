@@ -1,10 +1,8 @@
 package agh.ics.oop;
 
-
 public class SimulationEngine implements IEngine{
     public RectangularMap map;
     public MoveDirection[] directions;
-    //public IWorldMap map;
     public SimulationEngine(MoveDirection[] directions, RectangularMap map, Vector2d[] locations){
         this.directions = directions;
         this.map = map;
