@@ -25,12 +25,14 @@ public class App extends Application{
         SimulationEngine engine = new SimulationEngine(directions, map, positions);
         Thread engineThread = new Thread(engine);
         engineThread.start();
-        this.moveDelay = 3000;
+        this.moveDelay = 300;
         this.map = map;
         this.upperRight = new Vector2d(engine.boundaries.xMax, engine.boundaries.yMax);
         this.bottomLeft = new Vector2d(engine.boundaries.xMin, engine.boundaries.yMin);
     }
     public void start(Stage primaryStage) throws Exception{
+
+
         board.getColumnConstraints().add(new ColumnConstraints(20));
         board.add( new Label ("y/x"), 0, 0);
 
